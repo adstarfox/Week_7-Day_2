@@ -3,7 +3,7 @@
 //////////////////////
 
 // 1) -------------------------------------------------------
-let numbers = [0,1,2,3,4,5,6,7,8,9]
+// let numbers = [0,1,2,3,4,5,6,7,8,9]
 
 function printNumbers(numbers) {
     for (let i = 0; i < numbers.length; i++) {
@@ -24,20 +24,20 @@ function printNumbers(numbers) {
 // You are challenged to find the 4th element of an array, and you came up with this solution:
 
 function findFourth(numbers) {
-    var count = 1       O(1)
-    var answer = 0      O(1)
+    var count = 1      // O(1)
+    var answer = 0      //O(1)
   
-    for (let i = 0; i < numbers.length; i++) {   O(n)
-        if (count === 4) {                       O(1)
-            answer = numbers[i]                  O(1)
-            return                               O(1)
-          } else {                               O(1)     
+    for (let i = 0; i < numbers.length; i++) {  // O(n)
+        if (count === 4) {                      // O(1)
+            answer = numbers[i]                 // O(1)
+            return                              // O(1)
+          } else {                              // O(1)     
             count += 1
         }
     }
   }
 
-  1 + 1 + n(1 + 1 + 1) +1
+  //1 + 1 + n(1 + 1 + 1) +1
 
 // Q: What is the time complexity of of this solution?
 // ANSWER:O(n)
@@ -202,13 +202,13 @@ function arrInception(parentArr) {
 // 14) You are challenged to find the squared value of each number in an array. This is not the best solution, but it is what you come up with anyway...
 
 function getNumbersSquared(numbers) {
-  let numbers2 = [...numbers]        O(n)
+  let numbers2 = [...numbers]        //O(n)
 
-  let answers = []                   O(1)
+  let answers = []                   //O(1)
 
   for (let i = 0; i < numbers.length; i++) {
-    let squaredValue = numbers[i] * numbers2[i]    O(n)
-    answers.push(squaredValue)                     O(n)
+    let squaredValue = numbers[i] * numbers2[i]    //O(n)
+    answers.push(squaredValue)                     //O(n)
   }
   return answers
 }
